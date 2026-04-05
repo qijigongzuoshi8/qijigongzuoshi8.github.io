@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,14 +9,35 @@
     <link rel="icon" href="images/miracle-nobg.ico">
     <link rel="stylesheet" href="style/main.css">
     <style>
-        nav a:nth-child(3){
+        nav a:nth-child(3) {
             background-color: white;
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
             border-right: 1px solid snow;
         }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            overflow-y: scroll;
+        }
+
+        #zs,
+        #xr {
+            width: 100%;
+        }
+
+        .details {
+            margin-top: 3em;
+            border-radius: 1em;
+            padding: 2em;
+            border: #000 solid 1px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <img src="images/miracle-nobg.ico">
@@ -32,7 +54,29 @@
         </nav>
         <div id="main">
             <h1>成员</h1>
+
+            <div id="zs">
+                <div class="details">
+                    <h2>灯塔</h2>
+                </div>
+                <div class="details">
+                    <h2>善君</h2>
+                </div>
+                <div class="details">
+                    <h2>灯火</h2>
+                </div>
+            </div>
+            <div id="xr">
+                <div class="details">
+                    <h2>啥笔</h2>
+                </div>
+                <div class="details">
+                    <h2>韩少</h2>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
+
 </html>
