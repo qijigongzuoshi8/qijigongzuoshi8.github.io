@@ -13,6 +13,7 @@ header {
     align-items: center;
     background-color: aquamarine;
     height:15vh;
+    font-family: fangsong;
 }
 
 header img {
@@ -32,17 +33,19 @@ nav {
 
 nav a {
     display: block;
+    font-family: kaiti;
     font-size: 1.5em;
     line-height: calc((85vh - 2px) / 6);
     text-align: center;
     height: calc((85vh - 2px) / 6);
-    background-color: #f1f3f4;
+    background-color: lightgreen;
     transition: background-color .2s linear;
     border-right: 1px solid #000;
 }
 
 nav a:hover {
-    background-color: snow;
+    background-color: green;
+    color: snow;
 }
 
 #main {
