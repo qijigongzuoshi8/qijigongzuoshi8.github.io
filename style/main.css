@@ -29,7 +29,7 @@ header img {
 nav {
     display: inline-block;
     height: 85vh;
-    width: calc(25vw - 1px);
+    width: calc(20vw - 1px);
 }
 
 nav a {
@@ -54,5 +54,9 @@ nav a:hover {
     background-color: snow;
     align-self: stretch;
     height: 85vh;
-    width: 75vw;
+    width: 80vw;
+}
+
+#main>h1 {
+    text-align: center;
 }
