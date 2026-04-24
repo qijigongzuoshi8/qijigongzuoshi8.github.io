@@ -18,6 +18,29 @@
         nav a:nth-child(4) {
             color: #000;
         }
+
+        #main {
+            overflow: auto; 
+        }
+
+        .details {
+            margin-top: 3em;
+            border-radius: 1em;
+            padding: 2em;
+            border: #000 solid 1px;
+            width: calc(80% - 4em - 2px);
+            margin-left: 10%;
+            margin-right: 10%;
+            transition: background-color .2s linear;
+        }
+
+        .details:hover {
+            background-color: #f0f0f0;
+        }
+
+        .details>h2 {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +59,21 @@
         </nav>
         <div id="main">
             <h1>作品</h1>
+            <div id="done">
+                <h2>已出版</h2>
+                <div class="details">
+                    <h2>《七八奇事》</h2>
+                </div>
+            </div>
+            <div id="finishing">
+                <h2>编写中</h2>
+                <div class="details">
+                    <h2>《阳王朝》</h2>
+                </div>
+                <div class="details">
+                    <h2>《究极生命体》</h2>
+                </div>
+            </div>
         </div>
     </div>
 </body>
