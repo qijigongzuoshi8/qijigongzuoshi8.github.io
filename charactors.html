@@ -50,6 +50,15 @@
             display: inline-block;
         }
 
+        .details>.zhiwei {
+            font-weight: bold;
+            color: #0000ff;
+            background-color: #87cefa;
+            padding: .3em;
+            border-radius: .3em;
+            font-family: 黑体;
+        }
+
         .introductions {
             float: right;
             text-decoration: underline;
@@ -98,6 +107,7 @@
 
         .win .shut:hover {
             background-color: #f1f3f4;
+            cursor: pointer;
         }
 
         .win .shut:active {
@@ -116,6 +126,10 @@
             overflow-y: scroll;
             overflow-x: hidden;
             height: 80%;
+        }
+
+        .win .content table tr td {
+            vertical-align: top;
         }
     </style>
 </head>
@@ -141,36 +155,50 @@
                 <h2>正式成员</h2>
                 <div class="details">
                     <h2>灯塔</h2>
+                    <span class="zhiwei">总务处主任</span>
+                    <span class="zhiwei">编写员</span>
+                    <span class="zhiwei">印装员</span>
                     <span class="introductions" onclick="show(0)">介绍</span>
                 </div>
                 <div class="details">
                     <h2>善君</h2>
+                    <span class="zhiwei">总务处副主任</span>
+                    <span class="zhiwei">写作员</span>
+                    <span class="zhiwei">信息科技工作员</span>
                     <span class="introductions" onclick="show(1)">介绍</span>
                 </div>
                 <div class="details">
                     <h2>灯火</h2>
+                    <span class="zhiwei">总务处干事</span>
+                    <span class="zhiwei">语法审核员</span>
                     <span class="introductions" onclick="show(2)">介绍</span>
+                </div>
+                <div class="details">
+                    <h2>海龙</h2>
+                    <span class="zhiwei">语法审核员</span>
+                    <span class="zhiwei">信息科技测试员</span>
+                    <span class="introductions" onclick="show(3)">介绍</span>
                 </div>
             </div>
             <div id="ls">
                 <h2>临时成员</h2>
                 <div class="details">
-                    <h2>随性</h2>
-                </div>
-                <div class="details">
                     <h2>韩少</h2>
+                    <span class="zhiwei">印刷员</span>
                 </div>
                 <div class="details">
                     <h2>舟渡</h2>
+                    <span class="zhiwei">写作员</span>
                 </div>
                 <div class="details">
                     <h2>泪音</h2>
+                    <span class="zhiwei">文学指导</span>
                 </div>
             </div>
             <div id="xr">
                 <h2>信任人员</h2>
                 <div class="details">
-                    <h2>大雾</h2>
+                    <h2>冷雾</h2>
                 </div>
             </div>
         </div>
@@ -183,25 +211,184 @@
                     主任&nbsp;编写员&nbsp;印装员
                 </div>
                 <div class="content">
-                    灯塔，本姓谢，2012年出生于山东青岛，原籍陕西渭南。2024年9月进入初中，并在同年10月在善君的协助下创建奇迹工作室，成为奇迹工作室创始人。同年11月，为善君颁发临时聘书，聘其为临时编写员。同年9月至次年1月，与善君共同完成奇迹工作室第一部书籍《七八奇事》，并使其成为灯塔代表作。2025年5月，编写单篇文章《奇梦志》、《擒屎皇》，后不幸被善君丢失。10月，参与设计记事本《无字真经》。2025年11月，主持设立“可信任人员”，共3人。同年11月，创立《奇迹报》，后因阅读人数过少发行5次后停刊同月，计划《至德御批御览》，但因编写计划规模变大，改名《至德的斗争》，后持续扩大规模，最终定名《阳王朝》，灯塔担任该书主编。2026年2月，邀请灯火成为《阳王朝》审核员。同年3月，批准善君为奇迹工作室制作官网的计划。同月，为善君、灯火、韩少、啥笔（后改为随性）颁发临时聘书，聘韩少为工作室助理，啥笔（随性）为官方网站审核员。（灯火、善君职位详见其介绍）同年4月，为善君、灯火颁发正式成员证，使他们成为奇迹工作室正式成员；为泪音颁发临时聘书，聘其为文学审核员；增加大雾（？对不起我忘了叫什么了）为信任人员。目前，《阳王朝》一书正在编写。
+                    灯塔，本姓谢，2012年出生于山东青岛，原籍陕西渭南。
+                    <table>
+                        <tr>
+                            <td>2024年9月</td>
+                            <td>进入初中，与善君相识。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年10月</td>
+                            <td>在善君的协助下创建奇迹工作室，成为奇迹工作室创始人。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年11月</td>
+                            <td>为善君颁发临时聘书，聘其为临时编写员。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年9月至2025年1月</td>
+                            <td>与善君共同完成奇迹工作室第一部书籍《七八奇事》，并使其成为灯塔代表作。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年5月</td>
+                            <td>编写单篇文章《奇梦志》、《擒屎皇》，后不幸被善君丢失。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年10月</td>
+                            <td>参与设计创意记事本《无字真经》。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年11月</td>
+                            <td>主持设立“可信任人员”，共3人。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年11月</td>
+                            <td>创立《奇迹报》，后因阅读人数过少发行5次后停刊</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>计划《至德御批御览》，但因编写计划规模变大，改名《至德的斗争》，后持续扩大规模，最终定名《阳王朝》，灯塔担任该书主编。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年2月</td>
+                            <td>邀请灯火成为《阳王朝》审核员。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年3月</td>
+                            <td>批准善君为奇迹工作室制作官网的计划。</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>为善君、灯火、韩少、啥笔（后改为海龙）颁发临时聘书，聘韩少为工作室助理，啥笔（海龙）为官方网站审核员。（灯火、善君职位详见其介绍）</td>
+                        </tr>
+                        <tr>
+                            <td>2026年4月</td>
+                            <td>为善君、灯火颁发正式成员证，使他们成为奇迹工作室正式成员；为泪音颁发临时聘书，聘其为文学审核员；增加冷雾为信任人员。</td>
+                        </tr>
+                        <tr>
+                            <td>目前</td>
+                            <td>《阳王朝》一书正在编写。</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div class="win">
                 <h1>善君</h1>
+                <div class="shut" onclick="shut()">X</div>
                 <div class="zhiwei">
                     副主任&nbsp;信息科技工作员
                 </div>
                 <div class="content">
-                    善君，本姓孙，2012年4月出生于山东日照，后至青岛就读。2024年9月与灯塔相识。同年10月，协助灯塔创立编写组织奇迹工作室。同年11月，灯塔为其颁发临时聘书，聘其为临时编写员。同年9月至次年1月，与灯塔一起完成奇迹工作室第一部书籍《七八奇事》。《七八奇事》为其代表作。2025年9月，创立《八八周报》，但由于无时间写作等原因发行一次后被迫停刊。2025年10月，设计记事本《无字真经》。同年12月，参与编写由灯塔创立的《奇迹报》，但由于无人阅览等原因，发行五次后被迫停刊。2026年1月，编写《灯塔传》。童年男3月，提议制作奇迹工作室官方网站，灯塔同月批准其执行，最终与2026年5月5日完成。
+                    善君，本姓孙，2012年4月出生于山东日照，后至青岛就读。
+                    <table>
+                        <tr>
+                            <td>2024年9月</td>
+                            <td>与灯塔相识。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年10月</td>
+                            <td>协助灯塔创立编写组织奇迹工作室。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年11月</td>
+                            <td>灯塔为其颁发临时聘书，聘其为临时编写员。</td>
+                        </tr>
+                        <tr>
+                            <td>2024年9月至2025年1月</td>
+                            <td>与灯塔一起完成奇迹工作室第一部书籍《七八奇事》。《七八奇事》为其代表作。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年9月</td>
+                            <td>创立《八八周报》，但由于无时间写作等原因发行一次后停刊。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年10月</td>
+                            <td>设计创意记事本《无字真经》。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年12月</td>
+                            <td>参与编写由灯塔创立的《奇迹报》，但由于无人阅览等原因，发行五次后被迫停刊。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年1月</td>
+                            <td>编写《灯塔传》。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年3月</td>
+                            <td>提议制作奇迹工作室官方网站，灯塔同月批准其执行，最终于2026年5月5日完成。</td>
+                        </tr>
+                    </table>  
                 </div>
             </div>
             <div class="win">
                 <h1>灯火</h1>
+                <div class="shut" onclick="shut()">X</div>
                 <div class="zhiwei">
                     语法审核员
                 </div>
                 <div class="content">
-                    敬请期待...
+                    灯火，男，本姓赵，2012年生人。
+                    <table>
+                        <tr>
+                            <td>2024年9月</td>
+                            <td>与灯塔、善君等人相识。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年9月</td>
+                            <td>被灯塔列入第一批信任人员名单，加入奇迹工作室。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年10月</td>
+                            <td>参与设计创意记事本《无字真经》。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年4月</td>
+                            <td>审核灯塔编写的中篇小说《阳王朝》。</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>成为本工作室正式成员。</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="win">
+                <h1>海龙</h1>
+                <div class="shut" onclick="shut()">X</div>
+                <div class="zhiwei">
+                    语法审核员
+                </div>
+                <div class="content">
+                    <table>
+                        <tr>
+                            <td>2024年9月</td>
+                            <td>与灯塔、善君等人相识。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年9月</td>
+                            <td>被灯塔列入第一批信任人员名单，加入奇迹工作室。</td>
+                        </tr>
+                        <tr>
+                            <td>2025年10月</td>
+                            <td>参与设计创意记事本《无字真经》。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年3月</td>
+                            <td>成为善君开发的本工作室官方网站测试员。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年4月</td>
+                            <td>审核灯塔编写的中篇小说《阳王朝》。</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>成为本工作室临时成员。</td>
+                        </tr>
+                        <tr>
+                            <td>2026年5月</td>
+                            <td>申请成为本工作室正式成员，获总务处批准，成为正式成员。</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
