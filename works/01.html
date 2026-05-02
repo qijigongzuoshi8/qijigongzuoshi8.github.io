@@ -7,10 +7,89 @@
     <title>《七八奇事》</title>
     <link rel="shortcut icon" href="../images/miracle.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/main.css">
+    <style>
+        #info {
+            height: 65vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: solid #000 1px;
+        }
+
+        #info img {
+            height: 80%;
+        }
+
+        #text {
+            font-size: 1.5em;
+            line-height: calc(65vh / 8);
+        }
+        
+        #sale {
+            display: flex;
+            height: calc(35vh - 1px);
+            width: 100vw;
+        }
+
+        #sale .i {
+            height: 100%;
+            width: 90vw;
+            border-right: #000 solid 1px;
+            font-size: 1.2em;
+        }
+
+        #sale .s {
+            height: 100%;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #back {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100px;
+            width: 100px;
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #back :hover {
+            background-color: #f1f3f4;
+        }
+
+        #back :active {
+            background-color: #808080;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        
-    </header>
+    <div id="main">
+        <div id="info">
+            <img src="../images/《七八奇事》图片1.jpg" alt="《七八奇事》" />
+            <img src="../images/《七八奇事》图片2.jpg" alt="《七八奇事》" />
+            <div id="text">
+                书名：七八奇事<br />
+                体裁：纪实书<br />
+                出品：奇迹工作室<br />
+                审核：灯火（内容）、善君（排版）<br />
+                印刷：韩少（奇迹工作室印刷室）<br />
+                规格：A5（148mm*210mm）<br />
+                书籍编码：QJ-B-01-3243<br />
+            </div>
+        </div>
+        <div id="sale">
+            <div class="i">
+                <h2>书籍介绍</h2>
+                《七八奇事》是一部油灯塔、善君编写的用简化文体记录的纪实书，主要记录的是七年级八班（当时作者所在的班级）的奇闻轶事，并且语言生动、层出乐点，读之令人忍俊不禁。这是本工作室出版印刷的第一部书籍。
+            </div>
+            <div class="s">
+                已停止售卖
+            </div>
+        </div>
+        <div id="back"><a href="../works.html">返回</a></div>
+    </div>
 </body>
 </html>
