@@ -1,0 +1,13 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>Layer 1</title>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="249.00002" x2="395" y1="67.00002" x1="395" stroke-width="38" fill="none"/>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="398" x2="413" y1="398" x1="66.99999" stroke-width="38" fill="none"/>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_3" y2="291" x2="485.00001" y1="291" x1="303" stroke-width="38" fill="none"/>
+  <text stroke="#0000ff" transform="matrix(11.681711046525376,0,0,8.870267824738855,-1966.3203060980406,-1431.6994172424145) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_5" y="195.73816" x="178.6164" fill="#0000ff">M</text>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_6" y2="85" x2="413" y1="85" x1="66.99999" stroke-width="38" fill="none"/>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_7" y2="416" x2="85" y1="67.00002" x1="85" stroke-width="38" fill="none"/>
+  <line stroke="#0000ff" fill-opacity="0" stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_8" y2="416" x2="395" y1="331.00002" x1="395" stroke-width="38" fill="none"/>
+ </g>
+</svg>
