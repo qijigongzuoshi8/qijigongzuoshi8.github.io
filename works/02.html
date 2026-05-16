@@ -17,16 +17,33 @@
             border-bottom: solid #000 1px;
         }
 
-        #info img {
+        #imgs {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: auto;
+        }
+
+        #imgs img {
             height: 80%;
+            border: #000 solid 1px;
         }
 
         #text {
             padding: 1em;
             height: calc(65vh - 2em);
             font-size: 1.5em;
-            line-height: calc(65vh / 8);
+            line-height: calc(65vh / 10);
             border-left: #000 solid 1px;
+            overflow: auto;
+        }
+
+        @media screen and (max-width: 450px){
+            #text {
+                font-size: 1em;
+                line-height: normalS;
+            }
         }
         
         #sale {
@@ -41,6 +58,7 @@
             width: calc(90vw - 2em);
             border-right: #000 solid 1px;
             font-size: 1.2em;
+            overflow: auto;
         }
 
         #sale .s {
@@ -57,11 +75,11 @@
         }
 
         #back {
-            position: absolute;
+            position: fixed;
             top: .2rem;
             right: .2rem;
-            height: 100px;
-            width: 100px;
+            height: 60px;
+            width: 60px;
             font-size: 1.5em;
             text-align: center;
             line-height: 100px;
@@ -113,12 +131,15 @@
 <body>
     <div id="main">
         <div id="info">
-            <img src="../images/《阳王朝》图片1.jpg" alt="《七八奇事》" onclick="show(0)" />
-            <img src="../images/《阳王朝》图片2.jpg" alt="《七八奇事》" onclick="show(1)" />
+            <div id="imgs">
+                <img src="../images/《阳王朝》图片1.jpg" alt="《七八奇事》" onclick="show(0)" />
+                <img src="../images/《阳王朝》图片2.jpg" alt="《七八奇事》" onclick="show(1)" />
+            </div>
             <div id="text">
                 书名：阳王朝&nbsp;第壹部<br />
                 体裁：小说<br />
-                出品：奇迹工作室（灯塔 著）<br />
+                作者：灯塔<br />
+                出品：奇迹工作室<br />
                 审核：灯火（内容）、善君（排版）<br />
                 印刷：韩少（奇迹工作室印刷室）<br />
                 规格：A5（148mm*210mm）<br />
@@ -134,7 +155,7 @@
                 <text>未完成</text>
             </div>
         </div>
-        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt=""></a></div>
+        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt="返回" style="height: 60px;width: 60px;"></a></div>
     </div>
     <div id="window">
         <div class="bg" onclick="shut()"></div>

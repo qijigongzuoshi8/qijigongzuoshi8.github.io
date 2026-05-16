@@ -18,18 +18,35 @@
             border-bottom: solid #000 1px;
         }
 
-        #info img {
+        #imgs {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: auto;
+        }
+
+        #imgs img {
             height: 80%;
+            border: #000 solid 1px;
         }
 
         #text {
             padding: 1em;
             height: calc(65vh - 2em);
             font-size: 1.5em;
-            line-height: calc(65vh / 8);
+            line-height: calc(65vh / 9);
             border-left: #000 solid 1px;
+            overflow: auto;
         }
 
+        @media screen and (max-width: 450px){
+            #text {
+                font-size: 1em;
+                line-height: normalS;
+            }
+        }
+        
         #sale {
             display: flex;
             height: calc(35vh - 1px);
@@ -42,6 +59,7 @@
             width: calc(90vw - 2em);
             border-right: #000 solid 1px;
             font-size: 1.2em;
+            overflow: auto;
         }
 
         #sale .s {
@@ -53,15 +71,16 @@
         }
 
         #sale .s text {
+            width: 100%;
             text-align: center;
         }
 
         #back {
-            position: absolute;
+            position: fixed;
             top: .2rem;
             right: .2rem;
-            height: 100px;
-            width: 100px;
+            height: 60px;
+            width: 60px;
             font-size: 1.5em;
             text-align: center;
             line-height: 100px;
@@ -114,8 +133,10 @@
 <body>
     <div id="main">
         <div id="info">
-            <img src="../images/《七八奇事》图片1.jpg" alt="《七八奇事》" onclick="show(0)" />
-            <img src="../images/《七八奇事》图片2.jpg" alt="《七八奇事》" onclick="show(1)" />
+            <div id="imgs">
+                <img src="../images/《七八奇事》图片1.jpg" alt="《七八奇事》" onclick="show(0)" />
+                <img src="../images/《七八奇事》图片2.jpg" alt="《七八奇事》" onclick="show(1)" />
+            </div>
             <div id="text">
                 书名：七八奇事<br />
                 体裁：纪实书<br />
