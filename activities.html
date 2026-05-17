@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="icon" href="images/miracle-nobg.ico">
     <link rel="stylesheet" href="style/main.css">
     <style>
-        nav a:nth-child(5){
+        nav a:nth-child(5) {
             background-color: white;
             border-bottom: 1px solid #000;
             border-top: 1px solid #000;
@@ -18,8 +19,32 @@
         nav a:nth-child(5) {
             color: #000;
         }
+
+        #acs {
+            width: calc(90% - 2px);
+            margin: 0 5%;
+        }
+
+        .ac {
+            padding: 1.5em;
+            border: #808080 solid 2px;
+            border-radius: 1em;
+            margin: 2em 0;
+        }
+
+        .ac .date,
+        .ac .author {
+            float: right;
+            margin: 0 1em;
+            color: #606060;
+        }
+
+        .ac .content {
+            margin: .5em 0;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="left">
@@ -39,10 +64,45 @@
         </nav>
         <div id="main">
             <h1>动态</h1>
-            2026年5月5日，官方网站制作完成。
+            <div id="acs"></div>
+            <div id="demo"></div>
         </div>
     </div>
     <div id="dark-bg-nav"></div>
     <script src="scripts/main.js"></script>
+    <script>
+        var acs = document.getElementById("acs");
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                var activities_content = JSON.parse(this.responseText);
+                var items = activities_content.items;
+                for (var i = items.length - 1; i >= 0; i--){
+                    var title = document.createElement("h3");
+                    var content = document.createElement("div");
+                    var date = document.createElement("span");
+                    var author = document.createElement("span");
+                    title.setAttribute("class", "title");
+                    content.setAttribute("class", "content");
+                    date.setAttribute("class", "date");
+                    author.setAttribute("class", "author");
+                    title.innerHTML = items[i].title;
+                    content.innerHTML = items[i].content;
+                    date.innerHTML = items[i].date;
+                    author.innerHTML = items[i].author;
+                    var ac = document.createElement("div");
+                    ac.setAttribute("class", "ac");
+                    ac.appendChild(title);
+                    ac.appendChild(content);
+                    ac.appendChild(date);
+                    ac.appendChild(author);
+                    acs.appendChild(ac);
+                }
+            }
+        };
+        xmlhttp.open("GET", "activities_content.json", true);
+        xmlhttp.send();
+    </script>
 </body>
+
 </html>

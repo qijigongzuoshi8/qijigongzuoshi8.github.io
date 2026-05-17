@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     background-color: #7fffd4;
-    height:15vh;
+    height: 15vh;
     font-weight: 900;
     font-family: fangsong;
 }
@@ -55,7 +55,7 @@ nav a {
     font-size: 1.5em;
     line-height: calc((85vh - 2px) / 6);
     text-align: center;
-    height: calc((85vh - 2px) / 6);
+    height: calc((100% - 2px) / 6);
     background-color: #90ee90;
     transition: background-color .2s linear;
     border-right: 1px solid #000;
@@ -82,6 +82,7 @@ nav a:hover {
     align-self: stretch;
     height: 100%;
     width: 80vw;
+    padding: .5em;
 }
 
 #main>h1 {
