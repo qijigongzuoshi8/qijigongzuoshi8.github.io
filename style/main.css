@@ -8,13 +8,19 @@ a {
     color: #000;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 header {
     display: flex;
     align-items: center;
     background-color: #7fffd4;
-    height: 15vh;
+    height: calc(15vh - 1px);
     font-weight: 900;
     font-family: fangsong;
+    border-bottom: solid #303030 1px;
 }
 
 header .left {
@@ -58,7 +64,7 @@ nav a {
     height: calc((100% - 2px) / 6);
     background-color: #90ee90;
     transition: background-color .2s linear;
-    border-right: 1px solid #000;
+    border-right: 1px solid #303030;
 }
 
 nav a:hover {
@@ -70,7 +76,7 @@ nav a:hover {
     display: none;
     background-color: #00000080;
     height: 100vh;
-    width: 55vw;
+    width: 55%;
     position: fixed;
     top: 0;
     left: 0;
@@ -95,7 +101,7 @@ nav a:hover {
         position: fixed;
         top: 0;
         right: 0;
-        width: 45vw;
+        width: 45%;
         height: 100vh;
     }
 
