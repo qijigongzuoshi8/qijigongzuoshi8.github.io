@@ -5,7 +5,7 @@
 
 a {
     text-decoration: none;
-    color: #000;
+    color: #fffafa;
 }
 
 body {
@@ -16,8 +16,9 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #7fffd4;
-    height: calc(15vh - 1px);
+    justify-content: center;
+    background-color: #f1f3f4;
+    height: calc(10vh - 1px);
     font-weight: 900;
     font-family: fangsong;
     border-bottom: solid #303030 1px;
@@ -28,8 +29,9 @@ header .left {
     height: 100%;
     width: 90vw;
     overflow: hidden;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    transition: all .5s linear;
 }
 
 #nav-phone {
@@ -45,31 +47,31 @@ header .left {
 #content {
     display: flex;
     width: 100vw;
-    height: 85vh;
+    height: 90vh;
 }
 
 nav {
     display: inline-block;
     height: 100%;
     width: calc(20vw - 1px);
-    background-color: #90ee90;
+    background-color: #101010;
 }
 
 nav a {
     display: block;
-    font-family: kaiti;
+    font-family: weiruanyahei;
+    color: #c0c0c0;
     font-size: 1.5em;
     line-height: calc((85vh - 2px) / 6);
     text-align: center;
     height: calc((100% - 2px) / 6);
-    background-color: #90ee90;
+    background-color: #101010;
     transition: background-color .2s linear;
     border-right: 1px solid #303030;
 }
 
 nav a:hover {
-    background-color: #008000;
-    color: snow;
+    background-color: #202020;
 }
 
 #dark-bg-nav {
@@ -84,11 +86,13 @@ nav a:hover {
 
 #main {
     display: inline-block;
-    background-color: #fffafa;
+    background-color: #303030;
+    color: silver;
     align-self: stretch;
     height: 100%;
     width: 80vw;
     padding: .5em;
+    overflow: auto;
 }
 
 #main>h1 {
@@ -115,6 +119,10 @@ nav a:hover {
 
     header {
         font-size: smaller;
+    }
+
+    header .left {
+        justify-content: left;
     }
 
     #content {

@@ -9,6 +9,10 @@
     <link rel="shortcut icon" href="../images/miracle.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/main.css">
     <style>
+        body {
+            background-color: #303030;
+        }
+        
         #info {
             height: 65vh;
             width: 100vw;
@@ -110,22 +114,30 @@
         }
 
         #window .win {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
             position: absolute;
             top: 0;
             left: 0;
+            width: 100vw;
             height: 100vh;
         }
 
         #window .win img {
-            height: 80%;
+            width: 70vmin;
         }
 
         .win .shut {
-            padding: 0.5em;
             position: absolute;
+            width: 30px;
             top: 2em;
             right: 2em;
             font-weight: bold;
+        }
+
+        .win .shut img {
+            width: 30px !important;
         }
     </style>
 </head>
@@ -161,9 +173,11 @@
     <div id="window">
         <div class="bg" onclick="shut()"></div>
         <div class="win">
+            <div class="shut" onclick="shut()"><img src="../images/shut.svg" alt="" /></div>
             <img src="../images/《七八奇事》图片1.jpg" alt="" />
         </div>
         <div class="win">
+            <div class="shut" onclick="shut()"><img src="../images/shut.svg" alt="" /></div>
             <img src="../images/《七八奇事》图片2.jpg" alt="">
         </div>
     </div>
