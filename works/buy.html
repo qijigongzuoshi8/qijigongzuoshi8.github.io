@@ -7,11 +7,22 @@
 	<link rel="icon" href="../images/miracle-nobg.ico">
     <link rel="stylesheet" href="../style/main.css">
 	<style>
+        @keyframes bg {
+            0% {
+                background-color: #000;
+            }
+
+            100% {
+                background-color: #fff;
+            }
+        }
+
 		body {
 			display: flex;
             flex-direction: column;
 			justify-content: center;
 			align-items: center;
+            animation: bg 1.5s linear;
 		}
 	</style>
 </head>
