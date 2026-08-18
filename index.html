@@ -8,6 +8,16 @@
     <title>奇迹工作室</title>
     <link rel="icon" href="images/miracle-nobg.ico">
     <style>
+        @keyframes start {
+            0% {
+                background-color: #000;
+            }
+
+            100% {
+                background-color: #f1f3f4;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -38,6 +48,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            animation: start 1s linear;
         }
 
         #start img {
