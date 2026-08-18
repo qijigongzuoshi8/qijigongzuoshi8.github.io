@@ -11,10 +11,16 @@
         body {
             background-color: #303030;
         }
+
+        #main {
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+        }
         
         #info {
             height: 65vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -22,6 +28,7 @@
         }
 
         #imgs {
+            width: 40%;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -30,12 +37,13 @@
         }
 
         #imgs img {
-            height: 80%;
+            width: 90%;
             border: #000 solid 1px;
         }
 
         #text {
             padding: 1em;
+            width: 60%;
             height: calc(65vh - 2em);
             font-size: 1.5em;
             line-height: calc(65vh / 10);
@@ -46,20 +54,20 @@
         @media screen and (max-width: 450px){
             #text {
                 font-size: 1em;
-                line-height: normalS;
+                line-height: 2em;
             }
         }
         
         #sale {
             display: flex;
             height: calc(35vh - 1px);
-            width: 100vw;
+            width: 100%;
         }
 
         #sale .i {
             padding: 1em;
             height: calc(100% - 2em);
-            width: calc(90vw - 2em);
+            width: calc(90% - 2em);
             border-right: #000 solid 1px;
             font-size: 1.2em;
             overflow: auto;
@@ -90,7 +98,7 @@
         }
 
         #back :hover {
-            background-color: #353535;
+            background-color: #404040;
         }
 
         #back :active {
@@ -155,7 +163,7 @@
                 审核：灯火（语法）、泪音（文学）<br />
                 印刷：灯塔<br />
                 规格：A5（148mm*210mm）<br />
-                书籍编码：暂无<br />
+                书籍编码：QJ-B-02-6217<br />
             </div>
         </div>
         <div id="sale">
@@ -169,10 +177,10 @@
 
             </div>
             <div class="s">
-                <text><a href="buy.html" target="_blank">购买通道</a></text>
+                <text>已暂停售卖</text>
             </div>
         </div>
-        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt="返回" style="height: 60px;width: 60px;"></a></div>
+        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt="返回" style="height: 60px;width: 60px;" /></a></div>
     </div>
     <div id="window">
         <div class="bg" onclick="shut()"></div>

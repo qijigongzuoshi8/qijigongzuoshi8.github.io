@@ -18,7 +18,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #f1f3f4;
-    height: calc(10vh - 1px);
+    height: calc(15vh - 1px);
     font-weight: 900;
     font-family: fangsong;
     border-bottom: solid #303030 1px;
@@ -31,13 +31,12 @@ header .left {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    transition: all .5s linear;
 }
 
 #nav-phone {
     display: none;
     float: right;
-    height: 10vh;
+    height: 8vh;
 }
 
 #nav-phone img {
@@ -47,14 +46,14 @@ header .left {
 #content {
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 85vh;
 }
 
 nav {
     display: inline-block;
     height: 100%;
     width: calc(20vw - 1px);
-    background-color: #404040;
+    background-color: #383838;
 }
 
 nav a {
@@ -65,13 +64,13 @@ nav a {
     line-height: calc((85vh - 2px) / 6);
     text-align: center;
     height: calc((100% - 2px) / 6);
-    background-color: #404040;
+    background-color: #282828;
     transition: background-color .2s linear;
     border-right: 1px solid #303030;
 }
 
 nav a:hover {
-    background-color: #353535;
+    background-color: #383838;
 }
 
 #dark-bg-nav {
@@ -91,12 +90,16 @@ nav a:hover {
     align-self: stretch;
     height: 100%;
     width: 80vw;
-    padding: .5em;
+    padding: 1em;
     overflow: auto;
 }
 
 #main>h1 {
     text-align: center;
+}
+
+#main>h2 {
+    margin-top: 1em;
 }
 
 @media screen and (max-width: 600px) {
@@ -124,20 +127,7 @@ nav a:hover {
     header .left {
         justify-content: left;
     }
-
-    #content {
-        height: 80vh;
-    }
 }
 
-@media screen and (max-height: 650px) {
-    header {
-        height: 20vh;
-    }
 
-    #content {
-        height: 80vh;
-    }
-}
-
-/*Miracle Studio*/
+/*Miracle Studio*/  

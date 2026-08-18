@@ -10,3 +10,7 @@ dark_bg_nav.onclick = function(){
     document.getElementsByTagName("nav")[0].style.display = "none";
     dark_bg_nav.style.display = "none";
 }
+
+var smooth_bg = document.createElement("div");
+smooth_bg.setAttribute("id", "smooth-bg");
+document.body.appendChild(smooth_bg);

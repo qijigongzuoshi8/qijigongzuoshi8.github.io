@@ -12,10 +12,16 @@
         body {
             background-color: #303030;
         }
+
+        #main {
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+        }
         
         #info {
             height: 65vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -23,6 +29,7 @@
         }
 
         #imgs {
+            width: 40%;
             height: 100%;
             display: flex;
             flex-wrap: wrap;
@@ -31,12 +38,13 @@
         }
 
         #imgs img {
-            height: 80%;
+            width: 90%;
             border: #000 solid 1px;
         }
 
         #text {
             padding: 1em;
+            width: 60%;
             height: calc(65vh - 2em);
             font-size: 1.5em;
             line-height: calc(65vh / 10);
@@ -47,7 +55,7 @@
         @media screen and (max-width: 450px){
             #text {
                 font-size: 1em;
-                line-height: normalS;
+                line-height: 2em;
             }
         }
         
@@ -60,7 +68,7 @@
         #sale .i {
             padding: 1em;
             height: calc(100% - 2em);
-            width: calc(90vw - 2em);
+            width: calc(60% - 2em - 1px);
             border-right: #000 solid 1px;
             font-size: 1.2em;
             overflow: auto;
@@ -68,6 +76,7 @@
 
         #sale .s {
             display: flex;
+            width: 40%;
             height: 100%;
             font-size: 2em;
             justify-content: center;
@@ -91,7 +100,7 @@
         }
 
         #back :hover {
-            background-color: #f1f3f4;
+            background-color: #404040;
         }
 
         #back :active {
@@ -168,7 +177,7 @@
                 <text>已停止售卖</text>
             </div>
         </div>
-        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt=""></a></div>
+        <div id="back"><a href="../works.html"><img src="../images/back.svg" alt="" style="height: 60px;width: 60px;" /></a></div>
     </div>
     <div id="window">
         <div class="bg" onclick="shut()"></div>
