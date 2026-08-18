@@ -54,7 +54,7 @@ nav {
     display: inline-block;
     height: 100%;
     width: calc(20vw - 1px);
-    background-color: #101010;
+    background-color: #404040;
 }
 
 nav a {
@@ -65,13 +65,13 @@ nav a {
     line-height: calc((85vh - 2px) / 6);
     text-align: center;
     height: calc((100% - 2px) / 6);
-    background-color: #101010;
+    background-color: #404040;
     transition: background-color .2s linear;
     border-right: 1px solid #303030;
 }
 
 nav a:hover {
-    background-color: #202020;
+    background-color: #353535;
 }
 
 #dark-bg-nav {
