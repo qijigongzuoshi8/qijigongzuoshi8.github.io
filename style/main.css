@@ -3,6 +3,25 @@
     padding: 0px;
 }
 
+html {
+    scrollbar-width: 3px;
+    scrollbar-color: #c0c0c0 initial;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 1.5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: initial;
+}
+
 a {
     text-decoration: none;
     color: #fffafa;
@@ -14,6 +33,10 @@ body {
 }
 
 header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +44,8 @@ header {
     height: calc(15vh - 1px);
     font-weight: 900;
     font-family: fangsong;
-    border-bottom: solid #303030 1px;
+    box-shadow: 0 3px 10px #000;
+    z-index: 1;
 }
 
 header .left {
@@ -47,6 +71,9 @@ header .left {
     display: flex;
     width: 100vw;
     height: 85vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 nav {
@@ -88,7 +115,7 @@ nav a:hover {
     background-color: #303030;
     color: silver;
     align-self: stretch;
-    height: 100%;
+    height: calc(100% - 2em);
     width: 80vw;
     padding: 1em;
     overflow: auto;
